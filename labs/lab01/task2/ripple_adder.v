@@ -12,6 +12,7 @@
 //
 // Use named port connections (.a(...), .b(...), etc.), not positional.
 
+
 module ripple_adder(
   input  [3:0] a,
   input  [3:0] b,

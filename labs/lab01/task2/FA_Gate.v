@@ -17,6 +17,7 @@
 // gates are rarely symmetric this way. Re-simulate with the SAME
 // ripple_adder.v and tb.v; nothing else needs to change.
 
+
 module FA_Gate(
   input  a,
   input  b,
