@@ -1,6 +1,4 @@
 // FA_Gate.v
-// (Carried forward from Task 2 -- paste in your completed, delay-annotated
-// version.)
 // Gate-level model of a 1-bit full adder, now with explicit gate delays.
 // From this task onward, every gate/assign you write in this lab should
 // have an explicit delay -- it's the default way we'll be writing Verilog
