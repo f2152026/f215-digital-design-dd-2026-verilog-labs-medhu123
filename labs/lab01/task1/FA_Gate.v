@@ -7,6 +7,7 @@
 //           instantiations below into any different sequence, then
 //           re-simulate with the same tb.v and compare.
 
+
 module FA_Gate(
   input  a,
   input  b,
