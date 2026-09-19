@@ -22,17 +22,15 @@ module alu (
   reg [3:0] b_inv;
   reg [3:0] b_twos;
 
-  always @(a, b) begin
-    case (op)
-      1'b0: begin
-        result = a + b;                 // add
-      end
-      1'b1: begin
-        b_inv  <= ~b;                   // sub, via two's complement
-        b_twos <= b_inv + 1;
-        result <= a + b_twos;
-      end
-    endcase
+  always @(*) begin
+  case (op)
+    1'b0: result = a + b;
+    1'b1: begin
+      b_inv  = ~b;
+      b_twos = b_inv + 1;
+      result = a + b_twos;
+    end
+  endcase
   end
 
 endmodule
